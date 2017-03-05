@@ -14,6 +14,7 @@ public class EnableCameraDepthInForward : MonoBehaviour {
 #endif
 	void Start () {
 		Set();
+		Debug.Log (GetComponent<Camera>().depthTextureMode);
 	}
 	void Set(){
 		if(GetComponent<Camera>().depthTextureMode == DepthTextureMode.None)
