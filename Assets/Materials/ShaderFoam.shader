@@ -15,7 +15,7 @@ Shader "Shader Forge/ShadeFoam" {
         Tags {
             //"Queue"="AlphaTest"
 
-              "Queue"="Transparent"
+            "Queue"="Transparent"
             "RenderType"="TransparentCutout"
         }
         Pass {
@@ -174,6 +174,8 @@ Shader "Shader Forge/ShadeFoam" {
             {
                 float4 node_3356 = _Time + _TimeEditor;
                 clip(MetaBall( (node_3356.r*_timescale) , i.uv0 ) - 0.5);
+
+
                 float4 finalColor = _RegularColor;
  
                 //Get the distance to the camera from the depth buffer for this point
