@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/followPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Materials/ShaderFoam.shader">
     <Files>
-      <File FileName="Assets/Materials/NewShader.shader" Line="135" Column="17" />
-      <File FileName="Assets/ShaderForge/Example Assets/Scripts/EnableCameraDepthInForward.cs" Line="21" Column="68" />
-      <File FileName="Assets/followPlayer.cs" Line="27" Column="1" />
+      <File FileName="Assets/Materials/NewShader.shader" Line="1" Column="1" />
+      <File FileName="Assets/ShaderForge/Example Assets/Scripts/EnableCameraDepthInForward.cs" Line="1" Column="3" />
+      <File FileName="Assets/followPlayer.cs" Line="27" Column="5" />
+      <File FileName="Assets/Materials/ShaderFoam.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
