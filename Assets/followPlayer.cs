@@ -24,6 +24,6 @@ public class followPlayer : MonoBehaviour {
 		} else {
 		}
 //		transform.position.y = 1.0f;
-		print (transform.position);
+		//print (transform.position);
 	}
 }

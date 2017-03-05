@@ -1,13 +1,13 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{BFF059B3-194B-3BB9-6FCA-E8CE765CD26F}") = "IanMetaball", "Assembly-CSharp-firstpass.csproj", "{6DC87067-7C29-B74C-C7A1-3F3AC027B767}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IanMetaball", "Assembly-CSharp-firstpass.csproj", "{6DC87067-7C29-B74C-C7A1-3F3AC027B767}"
 EndProject
-Project("{BFF059B3-194B-3BB9-6FCA-E8CE765CD26F}") = "IanMetaball", "Assembly-CSharp.csproj", "{B703486C-D51C-48D2-566A-33A0F771ECBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IanMetaball", "Assembly-CSharp.csproj", "{B703486C-D51C-48D2-566A-33A0F771ECBA}"
 EndProject
-Project("{BFF059B3-194B-3BB9-6FCA-E8CE765CD26F}") = "IanMetaball", "Assembly-CSharp-Editor-firstpass.csproj", "{B634EE3F-9C85-0AE9-5C23-98C671AAF8F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IanMetaball", "Assembly-CSharp-Editor-firstpass.csproj", "{B634EE3F-9C85-0AE9-5C23-98C671AAF8F1}"
 EndProject
-Project("{BFF059B3-194B-3BB9-6FCA-E8CE765CD26F}") = "IanMetaball", "Assembly-CSharp-Editor.csproj", "{02C70D5C-8583-6EA3-616F-79B972F620E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IanMetaball", "Assembly-CSharp-Editor.csproj", "{02C70D5C-8583-6EA3-616F-79B972F620E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
