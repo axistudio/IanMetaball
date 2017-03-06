@@ -12,6 +12,21 @@ public class EnableCameraDepthInForward : MonoBehaviour {
 		Set();
 	}
 #endif
+
+
+	// Use this for initialization
+	Camera camera ;
+
+	//public float intensity;
+	private Material material;
+
+
+	// Creates a private material used to the effect
+	void Awake ()
+	{
+		material = new Material( Shader.Find("Custom/DepthShader") );
+	}
+
 	void Start () {
 		Set();
 	}
@@ -19,4 +34,21 @@ public class EnableCameraDepthInForward : MonoBehaviour {
 		if(GetComponent<Camera>().depthTextureMode == DepthTextureMode.None)
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
 	}
+
+	void OnRenderImage (RenderTexture source, RenderTexture destination)
+	{
+		//		if (intensity == 0)
+		//		{
+		//			Graphics.Blit (source, destination);
+		//			return;
+		//		}
+
+		//material.SetFloat("_bwBlend", intensity);
+
+		Graphics.Blit (source, destination, material);
+	}
+
+
+
+
 }
