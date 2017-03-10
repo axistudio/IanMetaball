@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.34 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.34;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:0,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:False,igpj:False,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:4013,x:32880,y:32730,varname:node_4013,prsc:2|diff-4198-RGB,spec-7954-OUT,gloss-492-OUT,emission-3236-OUT,alpha-1708-OUT,clip-8278-OUT;n:type:ShaderForge.SFN_Code,id:8278,x:31983,y:33137,varname:node_8278,prsc:2,code:ZgBsAG8AYQB0ACAAYQBuAGkAbQB0AGkAbQBlACAAPQAgADQALgAwACoAXwBUAGkAbQBlADsACgAKAGYAbABvAGEAdAAyACAAbQBvAHYAZQAxADsACgBtAG8AdgBlADEALgB4ACAAPQAgAGMAbwBzACgAYQBuAGkAbQB0AGkAbQBlACkAKgAwAC4AMQA7AAoAbQBvAHYAZQAxAC4AeQAgAD0AIABzAGkAbgAoAGEAbgBpAG0AdABpAG0AZQAqADEALgA1ACkAKgAwAC4AMQA7AAoACgBmAGwAbwBhAHQAMgAgAG0AbwB2AGUAMgA7AAoAbQBvAHYAZQAyAC4AeAAgAD0AIABjAG8AcwAoAGEAbgBpAG0AdABpAG0AZQAqADIALgAwACkAKgAwAC4AMQA7AAoAbQBvAHYAZQAyAC4AeQAgAD0AIABzAGkAbgAoAGEAbgBpAG0AdABpAG0AZQAqADMALgAwACkAKgAwAC4AMQA7AAoACgAKAGYAbABvAGEAdAAyACAAbQBvAHYAZQAzADsACgBtAG8AdgBlADMALgB4ACAAPQAgAGMAbwBzACgAYQBuAGkAbQB0AGkAbQBlACoAMQAuADAAKQAqADAALgAxADsACgBtAG8AdgBlADMALgB5ACAAPQAgAHMAaQBuACgAYQBuAGkAbQB0AGkAbQBlACoAMgAuADAAKQAqADAALgAyADsACgAKAAoACgBmAGwAbwBhAHQAMgAgAG0AbwB2AGUANAA7AAoAbQBvAHYAZQA0AC4AeAAgAD0AIABzAGkAbgAoAGEAbgBpAG0AdABpAG0AZQAqADUALgA4ACkAKgAwAC4AMQA1ADsACgBtAG8AdgBlADQALgB5ACAAPQAgAGMAbwBzACgAYQBuAGkAbQB0AGkAbQBlACoAMgAuADIAKQAqADAALgAxADUAOwAKAAoACgBmAGwAbwBhAHQAMgAgAG0AbwB2AGUANQA7AAoAbQBvAHYAZQA1AC4AeAAgAD0AIABzAGkAbgAoAGEAbgBpAG0AdABpAG0AZQAqADYALgA4ACkAKgAwAC4AMQAyADsACgBtAG8AdgBlADUALgB5ACAAPQAgAGMAbwBzACgAYQBuAGkAbQB0AGkAbQBlACoANQAuADIAKQAqADAALgAxADMAOwAKAAoAZgBsAG8AYQB0ADIAIABtAG8AdgBlADYAOwAKAG0AbwB2AGUANgAuAHgAIAA9ACAAYwBvAHMAKABhAG4AaQBtAHQAaQBtAGUAKgAyAC4ANgApACoAMAAuADAAOAArADAALgAyADsACgBtAG8AdgBlADYALgB5ACAAPQAgAHMAaQBuACgAYQBuAGkAbQB0AGkAbQBlACoAMQAuADMAKQAqADAALgAxADIAKwAwAC4AMQA7AAoACgAKAGYAbABvAGEAdAAyACAAcAAgAD0AIABfAEkAbgBwAHUAdABVAFYALQBmAGwAbwBhAHQAMgAoADAALgA1ACwAMAAuADUAKQA7AAoAZgBsAG8AYQB0ACAAcgAxACAAPQAoAGQAbwB0ACgAcAAtAG0AbwB2AGUAMQAsAHAALQBtAG8AdgBlADEAKQApACoAMwAwAC4AMAA7AAoAZgBsAG8AYQB0ACAAcgAyACAAPQAoAGQAbwB0ACgAcAArAG0AbwB2AGUAMgAsAHAAKwBtAG8AdgBlADIAKQApACoAMgAwAC4AMAA7AAoAZgBsAG8AYQB0ACAAcgAzACAAPQAoAGQAbwB0ACgAcAArAG0AbwB2AGUAMwAsAHAAKwBtAG8AdgBlADMAKQApACoAMgAwAC4AMAA7AAoAZgBsAG8AYQB0ACAAcgA0ACAAPQAoAGQAbwB0ACgAcAArAG0AbwB2AGUANAAsAHAAKwBtAG8AdgBlADQAKQApACoAKAAyADAALgAwACsANQAwACoAYQBiAHMAKABjAG8AcwAoAGEAbgBpAG0AdABpAG0AZQAqADAALgAyACkAKQApADsACgBmAGwAbwBhAHQAIAByADUAIAA9ACgAZABvAHQAKABwACsAbQBvAHYAZQA1ACwAcAArAG0AbwB2AGUANQApACkAKgAoADQAMAAuADAAKwA4ADAAKgBhAGIAcwAoAHMAaQBuACgAYQBuAGkAbQB0AGkAbQBlACoAMAAuADEAKQApACkAOwAKAGYAbABvAGEAdAAgAHIANgAgAD0AKABkAG8AdAAoAHAAKwBtAG8AdgBlADYALABwACsAbQBvAHYAZQA2ACkAKQAqADMANQAuADAAOwAKAAoALwAvAG8AbgBlACAAQgBhAGwAbAAKAC8ALwBmAGwAbwBhAHQAIABtAGUAdABhAGIAYQBsAGwAIAA9ACgAMAAuADgALwByADYAKwAwAC4AMQAvAHIAMQApADsACgAKAC8ALwBsAG8AdABzACAAQgBhAGwAbABzAAoAZgBsAG8AYQB0ACAAbQBlAHQAYQBiAGEAbABsACAAPQAoADAALgAxACoAYQBiAHMAKABjAG8AcwAoAGEAbgBpAG0AdABpAG0AZQAqADAALgAwADIAKQApAC8AcgA0ACsAMAAuADEALwByADEAKwAwAC4AMQAvAHIAMgArADAALgAyAC8AcgAzACsAMAAuADAANQAvAHIANQArADAALgAzAC8AcgA2ACkAOwAKAAoACgBmAGwAbwBhAHQAIABjAG8AbAAgAD0AIABwAG8AdwAoAG0AZQB0AGEAYgBhAGwAbAAsADEAMAAuADAAKQA7AAoACgAvAC8AcgBlAHQAdQByAG4AIABmAGwAbwBhAHQANAAoAGMAbwBsACwAYwBvAGwALABjAG8AbAAsADEAKQA7AAoAcgBlAHQAdQByAG4AIABmAGwAbwBhAHQAKABjAG8AbAApADsACgA=,output:0,fname:MetaBall,width:592,height:520,input:0,input:1,input_1_label:_Time,input_2_label:_InputUV|A-647-OUT,B-282-UVOUT;n:type:ShaderForge.SFN_Time,id:3356,x:31549,y:33072,varname:node_3356,prsc:2;n:type:ShaderForge.SFN_TexCoord,id:282,x:31739,y:33386,varname:node_282,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Multiply,id:647,x:31774,y:33205,varname:node_647,prsc:2|A-3356-TSL,B-6436-OUT;n:type:ShaderForge.SFN_Slider,id:6436,x:31439,y:33263,ptovrint:False,ptlb:time scale,ptin:_timescale,varname:node_6436,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.2476629,max:1;n:type:ShaderForge.SFN_Color,id:2103,x:32190,y:32542,ptovrint:False,ptlb:EdgeColor,ptin:_EdgeColor,varname:node_2103,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.6617647,c2:0,c3:0,c4:1;n:type:ShaderForge.SFN_Multiply,id:3236,x:32434,y:32527,varname:node_3236,prsc:2|A-2103-RGB,B-1502-OUT;n:type:ShaderForge.SFN_DepthBlend,id:3717,x:32014,y:32701,varname:node_3717,prsc:2|DIST-3773-OUT;n:type:ShaderForge.SFN_Slider,id:3773,x:31649,y:32691,ptovrint:False,ptlb:Blend,ptin:_Blend,varname:node_3773,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.2516894,max:1;n:type:ShaderForge.SFN_OneMinus,id:1502,x:32190,y:32768,varname:node_1502,prsc:2|IN-3717-OUT;n:type:ShaderForge.SFN_Color,id:4198,x:32454,y:32332,ptovrint:False,ptlb:Base_Color,ptin:_Base_Color,varname:node_4198,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.3897059,c2:0.8232251,c3:1,c4:1;n:type:ShaderForge.SFN_Slider,id:7954,x:32385,y:32791,ptovrint:False,ptlb:Metalic,ptin:_Metalic,varname:node_7954,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:492,x:32385,y:32903,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metalic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1708,x:32226,y:33004,ptovrint:False,ptlb:Opacity,ptin:_Opacity,varname:node_1708,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;proporder:6436-4198-7954-492-2103-3773-1708;pass:END;sub:END;*/
+/*SF_DATA;ver:1.34;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:0,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:False,igpj:False,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:4013,x:32880,y:32730,varname:node_4013,prsc:2|diff-7918-OUT,spec-7954-OUT,gloss-492-OUT,emission-3236-OUT,alpha-1708-OUT,clip-8278-OUT;n:type:ShaderForge.SFN_Code,id:8278,x:31983,y:33137,varname:node_8278,prsc:2,code:ZgBsAG8AYQB0ACAAYQBuAGkAbQB0AGkAbQBlACAAPQAgADQALgAwACoAXwBUAGkAbQBlADsACgAKAGYAbABvAGEAdAAyACAAbQBvAHYAZQAxADsACgBtAG8AdgBlADEALgB4ACAAPQAgAGMAbwBzACgAYQBuAGkAbQB0AGkAbQBlACkAKgAwAC4AMQA7AAoAbQBvAHYAZQAxAC4AeQAgAD0AIABzAGkAbgAoAGEAbgBpAG0AdABpAG0AZQAqADEALgA1ACkAKgAwAC4AMQA7AAoACgBmAGwAbwBhAHQAMgAgAG0AbwB2AGUAMgA7AAoAbQBvAHYAZQAyAC4AeAAgAD0AIABjAG8AcwAoAGEAbgBpAG0AdABpAG0AZQAqADIALgAwACkAKgAwAC4AMQA7AAoAbQBvAHYAZQAyAC4AeQAgAD0AIABzAGkAbgAoAGEAbgBpAG0AdABpAG0AZQAqADMALgAwACkAKgAwAC4AMQA7AAoACgAKAGYAbABvAGEAdAAyACAAbQBvAHYAZQAzADsACgBtAG8AdgBlADMALgB4ACAAPQAgAGMAbwBzACgAYQBuAGkAbQB0AGkAbQBlACoAMQAuADAAKQAqADAALgAxADsACgBtAG8AdgBlADMALgB5ACAAPQAgAHMAaQBuACgAYQBuAGkAbQB0AGkAbQBlACoAMgAuADAAKQAqADAALgAyADsACgAKAAoACgBmAGwAbwBhAHQAMgAgAG0AbwB2AGUANAA7AAoAbQBvAHYAZQA0AC4AeAAgAD0AIABzAGkAbgAoAGEAbgBpAG0AdABpAG0AZQAqADUALgA4ACkAKgAwAC4AMQA1ADsACgBtAG8AdgBlADQALgB5ACAAPQAgAGMAbwBzACgAYQBuAGkAbQB0AGkAbQBlACoAMgAuADIAKQAqADAALgAxADUAOwAKAAoACgBmAGwAbwBhAHQAMgAgAG0AbwB2AGUANQA7AAoAbQBvAHYAZQA1AC4AeAAgAD0AIABzAGkAbgAoAGEAbgBpAG0AdABpAG0AZQAqADYALgA4ACkAKgAwAC4AMQAyADsACgBtAG8AdgBlADUALgB5ACAAPQAgAGMAbwBzACgAYQBuAGkAbQB0AGkAbQBlACoANQAuADIAKQAqADAALgAxADMAOwAKAAoAZgBsAG8AYQB0ADIAIABtAG8AdgBlADYAOwAKAG0AbwB2AGUANgAuAHgAIAA9ACAAYwBvAHMAKABhAG4AaQBtAHQAaQBtAGUAKgAyAC4ANgApACoAMAAuADAAOAArADAALgAyADsACgBtAG8AdgBlADYALgB5ACAAPQAgAHMAaQBuACgAYQBuAGkAbQB0AGkAbQBlACoAMQAuADMAKQAqADAALgAxADIAKwAwAC4AMQA7AAoACgAKAGYAbABvAGEAdAAyACAAcAAgAD0AIABfAEkAbgBwAHUAdABVAFYALQBmAGwAbwBhAHQAMgAoADAALgA1ACwAMAAuADUAKQA7AAoAZgBsAG8AYQB0ACAAcgAxACAAPQAoAGQAbwB0ACgAcAAtAG0AbwB2AGUAMQAsAHAALQBtAG8AdgBlADEAKQApACoAMwAwAC4AMAA7AAoAZgBsAG8AYQB0ACAAcgAyACAAPQAoAGQAbwB0ACgAcAArAG0AbwB2AGUAMgAsAHAAKwBtAG8AdgBlADIAKQApACoAMgAwAC4AMAA7AAoAZgBsAG8AYQB0ACAAcgAzACAAPQAoAGQAbwB0ACgAcAArAG0AbwB2AGUAMwAsAHAAKwBtAG8AdgBlADMAKQApACoAMgAwAC4AMAA7AAoAZgBsAG8AYQB0ACAAcgA0ACAAPQAoAGQAbwB0ACgAcAArAG0AbwB2AGUANAAsAHAAKwBtAG8AdgBlADQAKQApACoAKAAyADAALgAwACsANQAwACoAYQBiAHMAKABjAG8AcwAoAGEAbgBpAG0AdABpAG0AZQAqADAALgAyACkAKQApADsACgBmAGwAbwBhAHQAIAByADUAIAA9ACgAZABvAHQAKABwACsAbQBvAHYAZQA1ACwAcAArAG0AbwB2AGUANQApACkAKgAoADQAMAAuADAAKwA4ADAAKgBhAGIAcwAoAHMAaQBuACgAYQBuAGkAbQB0AGkAbQBlACoAMAAuADEAKQApACkAOwAKAGYAbABvAGEAdAAgAHIANgAgAD0AKABkAG8AdAAoAHAAKwBtAG8AdgBlADYALABwACsAbQBvAHYAZQA2ACkAKQAqADMANQAuADAAOwAKAAoALwAvAG8AbgBlACAAQgBhAGwAbAAKAC8ALwBmAGwAbwBhAHQAIABtAGUAdABhAGIAYQBsAGwAIAA9ACgAMAAuADgALwByADYAKwAwAC4AMQAvAHIAMQApADsACgAKAC8ALwBsAG8AdABzACAAQgBhAGwAbABzAAoAZgBsAG8AYQB0ACAAbQBlAHQAYQBiAGEAbABsACAAPQAoADAALgAxACoAYQBiAHMAKABjAG8AcwAoAGEAbgBpAG0AdABpAG0AZQAqADAALgAwADIAKQApAC8AcgA0ACsAMAAuADEALwByADEAKwAwAC4AMQAvAHIAMgArADAALgAyAC8AcgAzACsAMAAuADAANQAvAHIANQArADAALgAzAC8AcgA2ACkAOwAKAAoACgBmAGwAbwBhAHQAIABjAG8AbAAgAD0AIABwAG8AdwAoAG0AZQB0AGEAYgBhAGwAbAAsADEAMAAuADAAKQA7AAoACgAvAC8AcgBlAHQAdQByAG4AIABmAGwAbwBhAHQANAAoAGMAbwBsACwAYwBvAGwALABjAG8AbAAsADEAKQA7AAoAcgBlAHQAdQByAG4AIABmAGwAbwBhAHQAKABjAG8AbAApADsACgA=,output:0,fname:MetaBall,width:592,height:520,input:0,input:1,input_1_label:_Time,input_2_label:_InputUV|A-647-OUT,B-282-UVOUT;n:type:ShaderForge.SFN_Time,id:3356,x:31549,y:33072,varname:node_3356,prsc:2;n:type:ShaderForge.SFN_TexCoord,id:282,x:31739,y:33386,varname:node_282,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Multiply,id:647,x:31774,y:33205,varname:node_647,prsc:2|A-3356-TSL,B-6436-OUT;n:type:ShaderForge.SFN_Slider,id:6436,x:31439,y:33263,ptovrint:False,ptlb:time scale,ptin:_timescale,varname:node_6436,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.2476629,max:1;n:type:ShaderForge.SFN_Color,id:2103,x:32128,y:32483,ptovrint:False,ptlb:EdgeColor,ptin:_EdgeColor,varname:node_2103,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.6617647,c2:0,c3:0,c4:1;n:type:ShaderForge.SFN_Multiply,id:3236,x:32369,y:32624,varname:node_3236,prsc:2|A-2103-RGB,B-1502-OUT;n:type:ShaderForge.SFN_DepthBlend,id:3717,x:31933,y:32701,varname:node_3717,prsc:2|DIST-2791-OUT;n:type:ShaderForge.SFN_Slider,id:3773,x:31537,y:32461,ptovrint:False,ptlb:Blend,ptin:_Blend,varname:node_3773,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.2516894,max:1;n:type:ShaderForge.SFN_OneMinus,id:1502,x:32128,y:32661,varname:node_1502,prsc:2|IN-3717-OUT;n:type:ShaderForge.SFN_Color,id:4198,x:32454,y:32332,ptovrint:False,ptlb:Base_Color,ptin:_Base_Color,varname:node_4198,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.3897059,c2:0.8232251,c3:1,c4:1;n:type:ShaderForge.SFN_Slider,id:7954,x:32385,y:32791,ptovrint:False,ptlb:Metalic,ptin:_Metalic,varname:node_7954,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:492,x:32385,y:32903,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metalic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1708,x:32292,y:33026,ptovrint:False,ptlb:Opacity,ptin:_Opacity,varname:node_1708,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8899593,max:1;n:type:ShaderForge.SFN_ValueProperty,id:2791,x:31747,y:32689,ptovrint:False,ptlb:node_2791,ptin:_node_2791,varname:node_2791,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0;n:type:ShaderForge.SFN_Multiply,id:7918,x:32513,y:32485,varname:node_7918,prsc:2|A-4198-RGB,B-3717-OUT;proporder:6436-4198-7954-492-2103-3773-1708-2791;pass:END;sub:END;*/
 
 Shader "Shader Forge/ShadeFoam" {
     Properties {
@@ -11,7 +11,8 @@ Shader "Shader Forge/ShadeFoam" {
         _Gloss ("Gloss", Range(0, 1)) = 0
         _EdgeColor ("EdgeColor", Color) = (0.6617647,0,0,1)
         _Blend ("Blend", Range(0, 1)) = 0.2516894
-        _Opacity ("Opacity", Range(0, 1)) = 0
+        _Opacity ("Opacity", Range(0, 1)) = 0.8899593
+        _node_2791 ("node_2791", Float ) = 0
         [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
     }
     SubShader {
@@ -26,7 +27,7 @@ Shader "Shader Forge/ShadeFoam" {
             }
             Blend SrcAlpha OneMinusSrcAlpha
             Cull Off
-            
+            ZWrite Off
             
             CGPROGRAM
             #pragma vertex vert
@@ -98,11 +99,11 @@ Shader "Shader Forge/ShadeFoam" {
             
             uniform float _timescale;
             uniform float4 _EdgeColor;
-            uniform float _Blend;
             uniform float4 _Base_Color;
             uniform float _Metalic;
             uniform float _Gloss;
             uniform float _Opacity;
+            uniform float _node_2791;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -190,7 +191,8 @@ Shader "Shader Forge/ShadeFoam" {
                 float LdotH = saturate(dot(lightDirection, halfDirection));
                 float3 specularColor = _Metalic;
                 float specularMonochrome;
-                float3 diffuseColor = _Base_Color.rgb; // Need this for specular when using metallic
+                float node_3717 = saturate((sceneZ-partZ)/_node_2791);
+                float3 diffuseColor = (_Base_Color.rgb*node_3717); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = abs(dot( normalDirection, viewDirection ));
@@ -229,7 +231,7 @@ Shader "Shader Forge/ShadeFoam" {
                 indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 ////// Emissive:
-                float3 emissive = (_EdgeColor.rgb*(1.0 - saturate((sceneZ-partZ)/_Blend)));
+                float3 emissive = (_EdgeColor.rgb*(1.0 - node_3717));
 /// Final Color:
                 float3 finalColor = diffuse + specular + emissive;
                 return fixed4(finalColor,_Opacity);
@@ -243,7 +245,7 @@ Shader "Shader Forge/ShadeFoam" {
             }
             Blend One One
             Cull Off
-            
+            ZWrite Off
             
             CGPROGRAM
             #pragma vertex vert
@@ -315,11 +317,11 @@ Shader "Shader Forge/ShadeFoam" {
             
             uniform float _timescale;
             uniform float4 _EdgeColor;
-            uniform float _Blend;
             uniform float4 _Base_Color;
             uniform float _Metalic;
             uniform float _Gloss;
             uniform float _Opacity;
+            uniform float _node_2791;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -372,7 +374,8 @@ Shader "Shader Forge/ShadeFoam" {
                 float LdotH = saturate(dot(lightDirection, halfDirection));
                 float3 specularColor = _Metalic;
                 float specularMonochrome;
-                float3 diffuseColor = _Base_Color.rgb; // Need this for specular when using metallic
+                float node_3717 = saturate((sceneZ-partZ)/_node_2791);
+                float3 diffuseColor = (_Base_Color.rgb*node_3717); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = abs(dot( normalDirection, viewDirection ));
